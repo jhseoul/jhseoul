@@ -1,140 +1,351 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="JH SEOUL — 서울을, 세계의 일상으로." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JH SEOUL — 서울을, 세계의 일상으로.">
+  <meta name="theme-color" content="#050505">
   <title>JH SEOUL</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header" id="siteHeader">
-    <a class="brand" href="#hero" aria-label="JH SEOUL 홈">
-      <img src="assets/jhseoul-logo.png" alt="JH SEOUL" />
-    </a>
 
-    <nav class="desktop-nav" aria-label="주 메뉴">
-      <a href="#company">회사소개</a>
-      <a href="#beauty">뷰티 &amp; 이노베이션</a>
-      <a href="#maeul">서울마을</a>
-      <a href="#story">스토리</a>
-      <a href="#contact">문의</a>
-    </nav>
+<header class="site-header" id="siteHeader">
+  <a class="brand" href="#home" aria-label="JH SEOUL 홈">
+    <img class="logo logo-light" src="assets/logo-light.png" alt="JH SEOUL">
+    <img class="logo logo-dark" src="assets/logo-dark.png" alt="" aria-hidden="true">
+  </a>
 
-    <button class="language-btn" type="button" aria-label="언어 선택">
-      <span>KOR</span><span class="chevron">⌄</span>
-    </button>
-
-    <button class="menu-btn" type="button" aria-label="메뉴 열기" aria-expanded="false">
-      <span></span><span></span>
-    </button>
-  </header>
-
-  <main>
-    <section class="hero" id="hero">
-      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/philosophy-orb.png">
-        <source src="assets/hero.mp4" type="video/mp4">
-      </video>
-
-      <div class="hero-shade"></div>
-      <div class="hero-grain"></div>
-
-      <div class="hero-content">
-        <p class="eyebrow">JH SEOUL · K-BEAUTY &amp; LIFESTYLE</p>
-        <h1>
-          <span>서울을,</span>
-          <span>세계의 일상으로<span class="accent-dot">.</span></span>
-        </h1>
-
-        <p class="hero-description">
-          한국의 뷰티와 라이프스타일을<br>
-          제품과 공간, 새로운 경험으로 연결합니다.
-        </p>
-
-        <div class="hero-actions">
-          <a class="primary-cta" href="#company">JH SEOUL 알아보기</a>
-          <a class="text-cta" href="#company">우리는 <span>→</span></a>
+  <nav class="main-nav" aria-label="주 메뉴">
+    <div class="nav-item">
+      <a href="company.html">회사소개</a>
+      <div class="mega-menu">
+        <div class="mega-intro">
+          <span>COMPANY</span>
+          <strong>기준을 만들고<br>신뢰를 쌓습니다.</strong>
+        </div>
+        <div class="mega-links">
+          <a href="#company"><b>JH SEOUL 소개</b><small>기업 철학과 방향</small></a>
+          <a href="#network"><b>사업 기반</b><small>의료·교육·공간·유통</small></a>
+          <a href="#partnership"><b>글로벌 파트너십</b><small>함께 만드는 새로운 시장</small></a>
         </div>
       </div>
+    </div>
 
-      <a class="scroll-cue" href="#company" aria-label="다음 섹션으로 이동">
-        <span>SCROLL TO DISCOVER</span>
-        <i></i>
-      </a>
-    </section>
-
-    <section class="philosophy" id="company">
-      <div class="section-index">01 / PHILOSOPHY</div>
-
-      <div class="philosophy-grid">
-        <div class="philosophy-copy reveal">
-          <p class="section-label">OUR STANDARD</p>
-          <h2>
-            우리는 원료를 아끼지 않습니다.<br>
-            <span>기준을 더 높이기 위해 시간을 아끼지 않습니다.</span>
-          </h2>
-
-          <div class="philosophy-body">
-            <p>
-              JH SEOUL은 원료와 재료를 단순한 비용으로 보지 않습니다.
-              더 나은 성분, 더 좋은 사용감, 더 안정적인 품질을 위해
-              직접 찾고, 비교하고, 확인합니다.
-            </p>
-            <p>
-              필요하다면 더 많은 시간과 비용을 들이더라도 기준을 낮추지 않습니다.
-              작은 차이가 제품의 완성도를 바꾼다는 것을 알기에,
-              보이지 않는 부분까지 아끼지 않는 것이 우리의 방식입니다.
-            </p>
-          </div>
+    <div class="nav-item">
+      <a href="beauty.html">뷰티 &amp; 이노베이션</a>
+      <div class="mega-menu">
+        <div class="mega-intro">
+          <span>BEAUTY &amp; INNOVATION</span>
+          <strong>기준에 닿을 때까지<br>다시 만듭니다.</strong>
         </div>
-
-        <figure class="philosophy-visual reveal">
-          <div class="orb-halo"></div>
-          <img src="assets/philosophy-orb.png" alt="투명한 수분 제형을 형상화한 비주얼">
-          <figcaption>DETAIL MAKES THE DIFFERENCE.</figcaption>
-        </figure>
+        <div class="mega-links four">
+          <a href="#beauty"><b>개발 철학</b><small>원료부터 마지막 사용감까지</small></a>
+          <a href="#beauty-standards"><b>핵심 개발 기준</b><small>Protection · Performance · Comfort · Texture</small></a>
+          <a href="#beauty-process"><b>원료와 제형</b><small>직접 찾고 비교하고 확인하는 과정</small></a>
+          <a href="#beauty-status"><b>개발 현황</b><small>현재 개발 및 샘플 검토 단계</small></a>
+        </div>
       </div>
+    </div>
 
-      <div class="values">
-        <article class="value-card reveal">
-          <span>01</span>
-          <h3>직접 찾습니다</h3>
-          <p>더 좋은 원료와 기술을 찾기 위해 직접 비교하고 확인합니다.</p>
-        </article>
-        <article class="value-card reveal">
-          <span>02</span>
-          <h3>아끼지 않습니다</h3>
-          <p>완성도를 높이는 데 필요한 원료와 시간, 노력을 아끼지 않습니다.</p>
-        </article>
-        <article class="value-card reveal">
-          <span>03</span>
-          <h3>타협하지 않습니다</h3>
-          <p>보이지 않는 부분이라도 품질의 기준은 낮추지 않습니다.</p>
-        </article>
+    <div class="nav-item">
+      <a href="seoul-maeul.html">서울마을</a>
+      <div class="mega-menu warm">
+        <div class="mega-intro">
+          <span>SEOUL MAEUL</span>
+          <strong>인도에서 만나는<br>작은 서울.</strong>
+        </div>
+        <div class="mega-links four">
+          <a href="#maeul"><b>서울마을 소개</b><small>서울의 오늘을 인도의 일상으로</small></a>
+          <a href="#maeul-zones"><b>K-Beauty</b><small>한국의 뷰티와 기술</small></a>
+          <a href="#maeul-zones"><b>K-Food &amp; Café</b><small>한국의 맛과 카페 문화</small></a>
+          <a href="#maeul-zones"><b>K-Lifestyle</b><small>생활과 디자인의 큐레이션</small></a>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <section class="next-placeholder" id="beauty">
-      <p>다음 섹션 예정</p>
-      <h2>대형병원 및 에스테틱 · 23+ Schools · 서울마을 · 서울창고</h2>
-    </section>
-  </main>
+    <div class="nav-item">
+      <a href="story.html">스토리</a>
+      <div class="mega-menu">
+        <div class="mega-intro">
+          <span>STORY</span>
+          <strong>결과보다 먼저,<br>과정을 기록합니다.</strong>
+        </div>
+        <div class="mega-links">
+          <a href="#story"><b>제품 개발 이야기</b><small>샘플과 기준이 바뀌는 과정</small></a>
+          <a href="#story"><b>서울마을 프로젝트</b><small>공간이 현실이 되는 과정</small></a>
+          <a href="#story"><b>글로벌 활동</b><small>현지 네트워크와 새로운 연결</small></a>
+        </div>
+      </div>
+    </div>
 
-  <div class="mobile-drawer" aria-hidden="true">
-    <nav>
-      <a href="#company">회사소개</a>
-      <a href="#beauty">뷰티 &amp; 이노베이션</a>
-      <a href="#maeul">서울마을</a>
-      <a href="#story">스토리</a>
-      <a href="#contact">문의</a>
-    </nav>
+    <div class="nav-item">
+      <a href="contact.html">문의</a>
+      <div class="mega-menu">
+        <div class="mega-intro">
+          <span>CONTACT</span>
+          <strong>새로운 시장을<br>함께 만듭니다.</strong>
+        </div>
+        <div class="mega-links four">
+          <a href="#contact"><b>사업 제휴</b><small>제품·브랜드·공간 협력</small></a>
+          <a href="#contact"><b>유통 및 공급</b><small>한국과 인도를 잇는 유통</small></a>
+          <a href="#contact"><b>교육·의료 협력</b><small>학교·병원·에스테틱 네트워크</small></a>
+          <a href="#contact"><b>일반 문의</b><small>JH SEOUL에 문의하기</small></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <button class="language" type="button" aria-label="언어 선택">KOR <span>⌄</span></button>
+  <button class="mobile-toggle" type="button" aria-expanded="false" aria-label="메뉴 열기">
+    <span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-panel" aria-hidden="true">
+  <div class="mobile-nav">
+    <details>
+      <summary>회사소개</summary>
+      <a href="#company">JH SEOUL 소개</a>
+      <a href="#network">사업 기반</a>
+      <a href="#partnership">글로벌 파트너십</a>
+    </details>
+    <details>
+      <summary>뷰티 &amp; 이노베이션</summary>
+      <a href="#beauty">개발 철학</a>
+      <a href="#beauty-standards">핵심 개발 기준</a>
+      <a href="#beauty-process">원료와 제형</a>
+      <a href="#beauty-status">개발 현황</a>
+    </details>
+    <details>
+      <summary>서울마을</summary>
+      <a href="#maeul">서울마을 소개</a>
+      <a href="#maeul-zones">K-Beauty</a>
+      <a href="#maeul-zones">K-Food &amp; Café</a>
+      <a href="#maeul-zones">K-Lifestyle</a>
+    </details>
+    <details>
+      <summary>스토리</summary>
+      <a href="#story">제품 개발 이야기</a>
+      <a href="#story">서울마을 프로젝트</a>
+      <a href="#story">글로벌 활동</a>
+    </details>
+    <details>
+      <summary>문의</summary>
+      <a href="#contact">사업 제휴</a>
+      <a href="#contact">유통 및 공급</a>
+      <a href="#contact">교육·의료 협력</a>
+      <a href="#contact">일반 문의</a>
+    </details>
   </div>
+</div>
 
-  <script src="script.js"></script>
+<main>
+  <section class="hero" id="home">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.jpg">
+      <source src="assets/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="kicker">JH SEOUL · K-BEAUTY &amp; LIFESTYLE</p>
+      <h1>서울을,<br>세계의 일상으로<span>.</span></h1>
+      <p class="hero-copy">한국의 뷰티와 라이프스타일을<br>제품과 공간, 새로운 경험으로 연결합니다.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="#company">JH SEOUL 알아보기</a>
+        <a class="btn btn-link" href="#company">우리는 <span>→</span></a>
+      </div>
+    </div>
+    <a class="scroll-indicator" href="#company"><span>SCROLL TO DISCOVER</span><i></i></a>
+  </section>
+
+  <section class="philosophy section-light" id="company">
+    <div class="section-no">01 / PHILOSOPHY</div>
+    <div class="two-col">
+      <div class="copy-block reveal">
+        <p class="section-label">OUR STANDARD</p>
+        <h2>우리는 원료를 아끼지 않습니다.<br><em>기준을 더 높이기 위해 시간을 아끼지 않습니다.</em></h2>
+        <div class="body-copy">
+          <p>JH SEOUL은 원료와 재료를 단순한 비용으로 보지 않습니다. 더 나은 성분, 더 좋은 사용감, 더 안정적인 품질을 위해 직접 찾고, 비교하고, 확인합니다.</p>
+          <p>필요하다면 더 많은 시간과 비용을 들이더라도 기준을 낮추지 않습니다. 작은 차이가 완성도를 바꾼다는 것을 알기에, 보이지 않는 부분까지 아끼지 않는 것이 우리의 방식입니다.</p>
+        </div>
+      </div>
+      <figure class="orb-visual reveal">
+        <div class="orb-glow"></div>
+        <img src="assets/philosophy.jpg" alt="투명한 수분 제형 비주얼">
+        <figcaption>DETAIL MAKES THE DIFFERENCE.</figcaption>
+      </figure>
+    </div>
+    <div class="value-row">
+      <article class="reveal"><span>01</span><h3>직접 찾습니다</h3><p>더 좋은 원료와 기술을 찾기 위해 직접 비교하고 확인합니다.</p></article>
+      <article class="reveal"><span>02</span><h3>아끼지 않습니다</h3><p>완성도를 높이는 데 필요한 원료와 시간, 노력을 아끼지 않습니다.</p></article>
+      <article class="reveal"><span>03</span><h3>타협하지 않습니다</h3><p>보이지 않는 부분이라도 품질의 기준은 낮추지 않습니다.</p></article>
+    </div>
+  </section>
+
+  <section class="network" id="network">
+    <div class="network-head reveal">
+      <p class="section-label">OUR FOUNDATION</p>
+      <h2>우리는 가능성만 말하지 않습니다.<br>사람과 시장, 공간을 실제로 연결합니다.</h2>
+      <p>의료기관과 교육기관, 라이프스타일 공간과 유통 거점까지.<br>한국의 제품과 문화가 현지의 일상으로 이어질 수 있도록 기반을 만들어갑니다.</p>
+    </div>
+
+    <div class="network-list">
+      <article class="network-item reveal">
+        <div class="network-meta"><span>01</span><small>MEDICAL &amp; AESTHETIC</small></div>
+        <div><h3>대형병원 및 에스테틱 협력 네트워크</h3><p>전문성과 현장을 연결하며 메디컬 뷰티와 전문 관리 분야의 신뢰 기반을 확장합니다.</p></div>
+        <i>→</i>
+      </article>
+      <article class="network-item reveal">
+        <div class="network-meta"><span>02</span><small>23+ SCHOOLS</small></div>
+        <div><h3>23+ Schools</h3><p>현지 학교 네트워크를 기반으로 K-Beauty 교육과 한국의 문화·라이프스타일을 새로운 세대와 연결합니다.</p></div>
+        <i>→</i>
+      </article>
+      <article class="network-item reveal">
+        <div class="network-meta"><span>03</span><small>SEOUL MAEUL</small></div>
+        <div><h3>서울마을</h3><p>K-Beauty, K-Food, K-Café, K-Lifestyle을 하나의 공간에서 경험하는 글로벌 라이프스타일 플랫폼입니다.</p></div>
+        <i>→</i>
+      </article>
+      <article class="network-item reveal">
+        <div class="network-meta"><span>04</span><small>SEOUL WAREHOUSE</small></div>
+        <div><h3>서울창고</h3><p>선별된 한국의 제품과 브랜드가 새로운 시장과 만나는 유통·연결 기반입니다.</p></div>
+        <i>→</i>
+      </article>
+    </div>
+  </section>
+
+  <section class="beauty" id="beauty">
+    <div class="beauty-hero">
+      <img src="assets/beauty-main.jpg" alt="다양한 화장품 제형">
+      <div class="beauty-overlay"></div>
+      <div class="beauty-copy reveal">
+        <p class="section-label">PRODUCT DEVELOPMENT</p>
+        <h2>기준에 닿을 때까지,<br>우리는 다시 만듭니다.</h2>
+        <p>강한 자외선과 덥고 습한 환경에서도 매일 편안하게 사용할 수 있도록 기능은 충분하게 담고, 사용감은 반복해서 조정합니다.</p>
+        <strong>좋은 원료에서 시작해, 마지막 사용감까지 타협하지 않습니다.</strong>
+      </div>
+    </div>
+
+    <div class="standards" id="beauty-standards">
+      <article class="standard reveal"><span>01</span><b>PROTECTION</b><h3>자외선 환경을 고려한 보호 설계</h3></article>
+      <article class="standard reveal"><span>02</span><b>PERFORMANCE</b><h3>브라이트닝과 링클 케어를 고려한 기능 설계</h3></article>
+      <article class="standard reveal"><span>03</span><b>COMFORT</b><h3>쿨링과 수분의 균형</h3></article>
+      <article class="standard reveal"><span>04</span><b>TEXTURE</b><h3>덥고 습한 환경에도 부담 없는 산뜻한 제형</h3></article>
+    </div>
+
+    <div class="beauty-process" id="beauty-process">
+      <div class="process-image reveal"><img src="assets/beauty-texture.jpg" alt="서로 다른 화장품 제형"></div>
+      <div class="process-copy reveal">
+        <p class="section-label">FORMULATION &amp; TEXTURE</p>
+        <h2>좋은 성분을 고르는 일에서<br>좋은 사용감을 완성하는 일까지.</h2>
+        <p>원료와 기술, 제조 파트너를 직접 비교하고 샘플의 질감·흡수감·끈적임·쿨링감·마무리감을 반복해서 확인합니다.</p>
+        <div class="process-tags"><span>DIRECT SEARCH</span><span>SAMPLE REVIEW</span><span>TEXTURE TEST</span><span>RE-FORMULATION</span></div>
+      </div>
+    </div>
+
+    <div class="beauty-status" id="beauty-status">
+      <div>
+        <p class="section-label">IN DEVELOPMENT</p>
+        <h2>현재 JH SEOUL의 제품은<br>개발 및 샘플 검토 단계에 있습니다.</h2>
+      </div>
+      <p>완성품처럼 과장해 보여주기보다, 기준에 도달하기 위한 개발 과정과 방향을 투명하게 보여드립니다.</p>
+    </div>
+  </section>
+
+  <section class="maeul" id="maeul">
+    <div class="maeul-cover">
+      <img src="assets/maeul-exterior.jpg" alt="서울마을 외관 콘셉트">
+      <div class="maeul-shade"></div>
+      <div class="maeul-copy reveal">
+        <p class="section-label">SEOUL MAEUL</p>
+        <h2>인도에서 만나는 작은 서울</h2>
+        <strong>서울의 오늘을 담아,<br>인도의 새로운 일상으로.</strong>
+        <p>K-Beauty, K-Food, K-Café, K-Lifestyle을 한 공간에 담아 한국의 제품과 문화, 생활방식을 인도의 일상과 연결합니다.</p>
+        <a class="btn btn-outline" href="#maeul-zones">서울마을 자세히 보기 →</a>
+      </div>
+    </div>
+
+    <div class="maeul-zones" id="maeul-zones">
+      <article class="zone reveal"><img src="assets/maeul-beauty.jpg" alt="서울마을 K-Beauty 공간"><div><span>01</span><h3>K-BEAUTY</h3><p>한국의 스킨케어와 뷰티 기술을 직접 만나고 경험하는 공간</p></div></article>
+      <article class="zone reveal"><img src="assets/maeul-food.jpg" alt="서울마을 K-Food 공간"><div><span>02</span><h3>K-FOOD</h3><p>한국의 맛과 식문화를 현지의 일상에 소개하는 공간</p></div></article>
+      <article class="zone reveal"><img src="assets/maeul-cafe.jpg" alt="서울마을 K-Café 공간"><div><span>03</span><h3>K-CAFÉ</h3><p>음료와 디저트, 휴식을 통해 한국의 카페 문화를 경험하는 공간</p></div></article>
+      <article class="zone reveal"><img src="assets/maeul-lifestyle.jpg" alt="서울마을 K-Lifestyle 공간"><div><span>04</span><h3>K-LIFESTYLE</h3><p>생활용품과 디자인, 새로운 일상의 방식을 제안하는 공간</p></div></article>
+    </div>
+  </section>
+
+  <section class="warehouse" id="warehouse">
+    <img src="assets/warehouse.jpg" alt="한국 제품을 선별한 리테일 공간">
+    <div class="warehouse-overlay"></div>
+    <div class="warehouse-copy reveal">
+      <p class="section-label">SEOUL WAREHOUSE</p>
+      <h2>선별된 한국의 가치가,<br>새로운 시장과 만나는 곳.</h2>
+      <p>가능성 있는 한국의 제품과 브랜드를 발굴하고, 인도 시장과 이어지는 새로운 유통의 흐름을 만듭니다.</p>
+      <div class="warehouse-points"><span>DISCOVER</span><span>SELECT</span><span>CONNECT</span><span>EXPAND</span></div>
+    </div>
+  </section>
+
+  <section class="story section-light" id="story">
+    <div class="story-head reveal">
+      <p class="section-label">STORIES</p>
+      <h2>결과보다 먼저,<br>과정을 기록합니다.</h2>
+      <p>제품이 완성되는 과정, 공간이 현실이 되는 과정, 새로운 시장과 연결되는 과정을 차곡차곡 남깁니다.</p>
+    </div>
+    <div class="story-grid">
+      <article class="story-card reveal"><img src="assets/lab.jpg" alt="제품 개발 연구 과정"><span>PRODUCT DEVELOPMENT</span><h3>좋은 원료를 찾고, 다시 확인하는 과정</h3><p>샘플과 제형을 반복해서 검토하며 기준을 높여가는 이야기를 전합니다.</p></article>
+      <article class="story-card reveal"><img src="assets/maeul-interior.jpg" alt="서울마을 공간 콘셉트"><span>SEOUL MAEUL PROJECT</span><h3>서울의 오늘을 한 공간에 담는 과정</h3><p>뷰티·푸드·카페·라이프스타일이 하나의 경험으로 이어지는 공간을 준비합니다.</p></article>
+      <article class="story-card reveal"><img src="assets/ingredients.jpg" alt="원료 이미지"><span>GLOBAL CONNECTION</span><h3>한국의 가치를 새로운 시장과 연결하는 과정</h3><p>제품과 브랜드가 현지의 일상으로 이어질 수 있는 기반을 구축합니다.</p></article>
+    </div>
+  </section>
+
+  <section class="partnership" id="partnership">
+    <div class="partnership-inner reveal">
+      <p class="section-label">PARTNERSHIP</p>
+      <h2>한국의 가능성을,<br>새로운 시장의 기회로.</h2>
+      <p>제품과 브랜드, 교육과 유통, 공간과 경험까지. JH SEOUL은 서로의 강점을 연결해 더 큰 시장을 만들어갑니다.</p>
+      <div class="partner-categories">
+        <span>제품·브랜드</span><span>유통·공급</span><span>교육</span><span>의료·에스테틱</span><span>공간·리테일</span>
+      </div>
+      <a class="btn btn-solid" href="#contact">파트너십 문의하기 →</a>
+    </div>
+  </section>
+
+  <section class="contact section-light" id="contact">
+    <div class="contact-copy reveal">
+      <p class="section-label">CONTACT JH SEOUL</p>
+      <h2>새로운 연결을<br>기다립니다.</h2>
+      <p>사업 제휴, 유통 및 공급, 교육·의료 협력과 관련한 문의를 남겨주세요.</p>
+    </div>
+    <form class="contact-form reveal" id="contactForm">
+      <label>이름 또는 회사명<input type="text" name="name" required></label>
+      <label>이메일<input type="email" name="email" required></label>
+      <label>문의 분야
+        <select name="type">
+          <option>사업 제휴</option>
+          <option>유통 및 공급</option>
+          <option>교육·의료 협력</option>
+          <option>서울마을</option>
+          <option>일반 문의</option>
+        </select>
+      </label>
+      <label class="full">문의 내용<textarea name="message" rows="5" required></textarea></label>
+      <button class="btn btn-dark" type="submit">문의 보내기 →</button>
+      <small>※ 현재 프로토타입에서는 메일 수신 기능 연동이 필요합니다.</small>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-statement">서울에서 시작한 가치가,<br>세계의 일상이 될 때까지.</div>
+  <div class="footer-bottom">
+    <img src="assets/logo-light.png" alt="JH SEOUL">
+    <div class="footer-links"><a href="#company">회사소개</a><a href="#beauty">뷰티 &amp; 이노베이션</a><a href="#maeul">서울마을</a><a href="#story">스토리</a><a href="#contact">문의</a></div>
+    <div class="footer-lang">KOR · ENG · 中文</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
