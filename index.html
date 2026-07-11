@@ -31,19 +31,18 @@
 
 <!-- HERO -->
 <section id="top" class="hero">
-  <div class="hero__drop-field" aria-hidden="true">
-    <svg class="hero__drop" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="drop-shape" d="M100 8C100 8 176 108 176 160C176 202.078 141.078 236 100 236C58.9218 236 24 202.078 24 160C24 108 100 8 100 8Z"/>
-      <ellipse class="drop-shine" cx="72" cy="120" rx="14" ry="24"/>
-    </svg>
-  </div>
-  <div class="hero__content">
-    <p class="eyebrow">JH SEOUL · SINCE THE FIRST DEW</p>
-    <h1 class="hero__title">피부가 기억하는<br><em>첫 이슬의 순간</em></h1>
-    <p class="hero__desc">전통 발효 방식으로 60일간 숙성한 원료 하나로,<br class="br-desktop">군더더기 없는 진짜 피부 회복을 만듭니다.</p>
-    <div class="hero__cta">
-      <a href="#products" class="btn btn--primary">제품 보기</a>
-      <a href="#process" class="btn btn--ghost">발효 공정 알아보기</a>
+  <div class="hero__inner">
+    <div class="hero__content">
+      <p class="eyebrow">JH SEOUL · SINCE THE FIRST DEW</p>
+      <h1 class="hero__title">피부가 기억하는<br><em>첫 이슬의 순간</em></h1>
+      <p class="hero__desc">전통 발효 방식으로 60일간 숙성한 원료 하나로,<br class="br-desktop">군더더기 없는 진짜 피부 회복을 만듭니다.</p>
+      <div class="hero__cta">
+        <a href="#products" class="btn btn--primary">제품 보기</a>
+        <a href="#process" class="btn btn--ghost">발효 공정 알아보기</a>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <img src="images/hero-dewdrop.jpg" alt="이슬과 얼음처럼 맑은 발효 원액 이미지" loading="eager">
     </div>
   </div>
   <div class="hero__scroll" aria-hidden="true">
@@ -78,6 +77,32 @@
       </div>
     </div>
   </div>
+
+  <div class="lab-strip">
+    <figure class="lab-strip__item">
+      <img src="images/lab-flasks.jpg" alt="발효 원료 배합 실험" loading="lazy">
+      <figcaption>원료 배합</figcaption>
+    </figure>
+    <figure class="lab-strip__item">
+      <img src="images/lab-scientist.jpg" alt="JH Seoul 연구소 전경" loading="lazy">
+      <figcaption>JH Seoul 연구소</figcaption>
+    </figure>
+    <figure class="lab-strip__item">
+      <img src="images/lab-dropper.jpg" alt="발효 원액 정제 테스트" loading="lazy">
+      <figcaption>순도 정제 테스트</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- SIGNATURE INGREDIENT -->
+<section id="ingredient" class="ingredient">
+  <img class="ingredient__bg" src="images/ceramide-complex.jpg" alt="세라마이드 콤플렉스 분자 구조 이미지">
+  <div class="ingredient__overlay"></div>
+  <div class="ingredient__content">
+    <span class="section-eyebrow">SIGNATURE INGREDIENT</span>
+    <h2>발효로 재구성한<br>세라마이드 콤플렉스</h2>
+    <p>피부 장벽을 이루는 지질 성분을 발효 공정으로 잘게 쪼개어, 세포 사이사이까지 스며드는 저분자 세라마이드로 재구성했습니다. 바르는 순간이 아니라, 흡수된 이후의 24시간을 설계합니다.</p>
+  </div>
 </section>
 
 <!-- PROCESS : Fermentation Journey -->
@@ -85,6 +110,11 @@
   <span class="section-eyebrow section-eyebrow--center">02 · FERMENTATION JOURNEY</span>
   <h2 class="process__title">발효, 네 번의 계절</h2>
   <p class="process__sub">원료가 제품이 되기까지, 시간만이 할 수 있는 일이 있습니다.</p>
+
+  <figure class="process__visual">
+    <img src="images/process-layers.jpg" alt="스크럽, 젤, 발효수로 이어지는 질감 변화 레이어 이미지" loading="lazy">
+    <figcaption>결정 → 젤 → 발효수, 하나의 원액이 지나는 세 가지 얼굴</figcaption>
+  </figure>
 
   <div class="timeline">
     <div class="timeline__line" aria-hidden="true"></div>
@@ -99,6 +129,7 @@
       <div class="timeline__marker">02</div>
       <h3>옹기 발효 <span>Ferment</span></h3>
       <p>전통 옹기 안에서 60일 이상, 미생물이 원료를 저분자 성분으로 천천히 분해합니다.</p>
+      <img class="timeline__inline-img" src="images/ferment-culture.jpg" alt="발효 배양 클로즈업" loading="lazy">
     </div>
 
     <div class="timeline__item">
@@ -122,28 +153,28 @@
 
   <div class="product-grid">
     <article class="product-card">
-      <div class="product-card__visual product-card__visual--essence" aria-hidden="true"></div>
+      <div class="product-card__visual" style="background-image:url('images/lab-dropper.jpg')" aria-hidden="true"></div>
       <h3>퍼스트 디유 에센스</h3>
       <p class="product-card__desc">첫 발효 원액 98% · 피부 장벽의 시작</p>
       <p class="product-card__price">62,000원</p>
     </article>
 
     <article class="product-card">
-      <div class="product-card__visual product-card__visual--cream" aria-hidden="true"></div>
+      <div class="product-card__visual" style="background-image:url('images/texture-trio.jpg');background-size:300% auto;background-position:50% 50%;" aria-hidden="true"></div>
       <h3>모먼트 리치 크림</h3>
       <p class="product-card__desc">발효 원액 + 옹기 진액 · 깊은 밤 보습</p>
       <p class="product-card__price">78,000원</p>
     </article>
 
     <article class="product-card">
-      <div class="product-card__visual product-card__visual--toner" aria-hidden="true"></div>
+      <div class="product-card__visual" style="background-image:url('images/texture-trio.jpg');background-size:300% auto;background-position:100% 50%;" aria-hidden="true"></div>
       <h3>모닝 듀 토너</h3>
       <p class="product-card__desc">가벼운 발효수 · 첫 이슬 같은 산뜻함</p>
       <p class="product-card__price">45,000원</p>
     </article>
 
     <article class="product-card">
-      <div class="product-card__visual product-card__visual--oil" aria-hidden="true"></div>
+      <div class="product-card__visual" style="background-image:url('images/botanical-extract.jpg')" aria-hidden="true"></div>
       <h3>씨드 리페어 오일</h3>
       <p class="product-card__desc">저온 압착 씨앗유 · 탄력 마무리</p>
       <p class="product-card__price">54,000원</p>
@@ -156,19 +187,24 @@
   <span class="section-eyebrow section-eyebrow--center">04 · VOICES</span>
   <h2 class="voices__title">고객이 남긴 결</h2>
 
-  <div class="voices__grid">
-    <blockquote class="voice-card">
-      <p>“성분표를 보지 않고도 순한 걸 느낄 수 있었어요. 3주 만에 화장이 뜨지 않게 됐습니다.”</p>
-      <cite>— 이O진, 34세</cite>
-    </blockquote>
-    <blockquote class="voice-card">
-      <p>“민감성 피부라 늘 조심스러웠는데, 트러블 없이 쓸 수 있는 몇 안 되는 에센스예요.”</p>
-      <cite>— 박O현, 29세</cite>
-    </blockquote>
-    <blockquote class="voice-card">
-      <p>“향이 과하지 않아서 좋아요. 발효 냄새인데도 은은하고 편안합니다.”</p>
-      <cite>— 최O아, 41세</cite>
-    </blockquote>
+  <div class="voices__layout">
+    <figure class="voices__photo">
+      <img src="images/model-jar.jpg" alt="JH Seoul 크림을 사용하는 고객" loading="lazy">
+    </figure>
+    <div class="voices__grid">
+      <blockquote class="voice-card">
+        <p>“성분표를 보지 않고도 순한 걸 느낄 수 있었어요. 3주 만에 화장이 뜨지 않게 됐습니다.”</p>
+        <cite>— 이O진, 34세</cite>
+      </blockquote>
+      <blockquote class="voice-card">
+        <p>“민감성 피부라 늘 조심스러웠는데, 트러블 없이 쓸 수 있는 몇 안 되는 에센스예요.”</p>
+        <cite>— 박O현, 29세</cite>
+      </blockquote>
+      <blockquote class="voice-card">
+        <p>“향이 과하지 않아서 좋아요. 발효 냄새인데도 은은하고 편안합니다.”</p>
+        <cite>— 최O아, 41세</cite>
+      </blockquote>
+    </div>
   </div>
 </section>
 

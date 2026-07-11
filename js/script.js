@@ -12,7 +12,7 @@ navLinks?.querySelectorAll('a').forEach(link => {
 
 // Scroll reveal
 const revealTargets = document.querySelectorAll(
-  '.philosophy__grid, .timeline__item, .product-card, .voice-card, .process__title, .products__title, .voices__title'
+  '.philosophy__grid, .lab-strip__item, .timeline__item, .process__visual, .product-card, .voice-card, .voices__photo, .process__title, .products__title, .voices__title'
 );
 revealTargets.forEach(el => el.classList.add('reveal'));
 
