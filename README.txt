@@ -48,3 +48,9 @@ v9: 문의 전송 기능 연결
 - FormSubmit 방식 사용
 - 첫 테스트 전송 시 수신 메일함에서 활성화 확인이 필요할 수 있음
 - 전송 완료 후 thank-you.html로 이동
+
+
+v13: company.html 비전(VISION) 섹션에 해안 도시 네트워크 영상 배경 추가
+- assets/vision-network.mp4 (무음, 자동재생, 루프)
+- assets/vision-network-poster.jpg (영상 로딩 전 포스터 이미지)
+- 어두운 그라디언트 오버레이로 텍스트 가독성 확보

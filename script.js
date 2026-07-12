@@ -9,20 +9,22 @@ function onScroll(){
 onScroll();
 window.addEventListener("scroll", onScroll, {passive:true});
 
-toggle.addEventListener("click", ()=>{
-  const open = mobilePanel.classList.toggle("open");
-  toggle.classList.toggle("open", open);
-  toggle.setAttribute("aria-expanded", String(open));
-  mobilePanel.setAttribute("aria-hidden", String(!open));
-  document.body.style.overflow = open ? "hidden" : "";
-});
-mobilePanel.querySelectorAll("a").forEach(a=>{
-  a.addEventListener("click", ()=>{
-    mobilePanel.classList.remove("open");
-    toggle.classList.remove("open");
-    document.body.style.overflow = "";
+if(toggle && mobilePanel){
+  toggle.addEventListener("click", ()=>{
+    const open = mobilePanel.classList.toggle("open");
+    toggle.classList.toggle("open", open);
+    toggle.setAttribute("aria-expanded", String(open));
+    mobilePanel.setAttribute("aria-hidden", String(!open));
+    document.body.style.overflow = open ? "hidden" : "";
   });
-});
+  mobilePanel.querySelectorAll("a").forEach(a=>{
+    a.addEventListener("click", ()=>{
+      mobilePanel.classList.remove("open");
+      toggle.classList.remove("open");
+      document.body.style.overflow = "";
+    });
+  });
+}
 
 const observer = new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
