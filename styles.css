@@ -239,6 +239,10 @@ footer{background:#050505;color:white;padding:110px 7vw 35px}
   .mobile-nav details{border-bottom:1px solid rgba(255,255,255,.14)}
   .mobile-nav summary{font-size:23px;font-weight:600;padding:20px 0;cursor:pointer;list-style:none}
   .mobile-nav a{display:block;padding:8px 0 8px 18px;color:rgba(255,255,255,.65);font-size:14px}
+  .mobile-lang{border-bottom:1px solid rgba(255,255,255,.14)}
+  .mobile-lang summary{font-size:15px;font-weight:700;padding:16px 0;cursor:pointer;list-style:none;color:var(--orange);font-family:var(--font-en);letter-spacing:.06em}
+  .mobile-lang a{display:block;padding:8px 0 8px 18px;color:rgba(255,255,255,.65);font-size:14px;font-family:var(--font-en)}
+  .mobile-lang a.active{color:var(--orange);font-weight:700}
   .two-col{grid-template-columns:1fr}
   .orb-visual{min-height:420px}
   .standards{grid-template-columns:repeat(2,1fr)}
