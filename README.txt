@@ -61,9 +61,3 @@ v14: 한국어 페이지 전반의 영문 표기를 한국어로 정리, 영어(
 - 각 페이지(홈/회사소개/뷰티/서울마을/스토리/문의/문의완료)마다 영문판(-en.html), 중문판(-zh.html) 신규 생성 (총 21개 HTML 파일)
 - 헤더 우측 및 푸터의 언어 전환 버튼(KOR·ENG·中文)이 실제로 각 언어 페이지로 연결되도록 구현
 - 문의 폼(contact.html)은 언어별로 항목명·안내문구까지 번역, 제출 후 각 언어의 완료 페이지(thank-you-*.html)로 이동
-
-
-v20: K-Food 이미지 교체 및 스토리 페이지 글로벌 연결 이미지 교체, 서울마을 프로젝트 현황 문구 수정
-- assets/maeul-food.jpg를 K-Food 분식바 신규 사진으로 교체 (index.html, seoul-maeul.html 및 각 언어판에 자동 반영)
-- story.html의 "글로벌 연결" 섹션 이미지를 새 assets/global-connection.jpg로 교체 (서울창고 섹션의 warehouse.jpg는 유지)
-- seoul-maeul.html 프로젝트 현황 문구: "기획·개발 중" → "첫 서울마을은 현재 공간 인테리어 및 오픈을 준비 중" (영문/중문판도 함께 수정)
